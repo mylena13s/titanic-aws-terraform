@@ -3,6 +3,8 @@
 
 ## 📜 Sobre o projeto:
 
+>  📝 Observação: devido a limitações de tamanho e de gerenciamento de dependências no AWS Lambda (layers), não utilizei um modelo real serializado em pickle; em vez disso, as probabilidades de sobrevivência são geradas pelo módulo random do Python para fins de simulação.
+
 Função AWS Lambda construída em Python que prevê a probabilidade de sobrevivência de passageiros do Titanic, exposta via API RESTful provisionada com Terraform.
 
 Funcionalidades: 
