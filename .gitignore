@@ -1,0 +1,31 @@
+# ==== IDEs e editores ====
+.vscode/
+
+# ==== Terraform ====
+# Estado local e metadados
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl
+# arquivos de variáveis
+*.tfvars
+# arquivos de override
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# plan
+*.tfplan
+# logs de crash
+crash.log
+# ==== Python / Lambda ====
+# caches e bytecode
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+# zip 
+*.zip
+lambda_function_lambda.zip
+
+
