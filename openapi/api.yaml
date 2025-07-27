@@ -3,7 +3,7 @@ info:
   title: "Survivors API5"
   version: "v2"
 servers:
-- url: /prod # substituir pelo "api_url" do deployment
+- url: /prod # substituir pelo "api_url" do deployment + /sobreviventes
   variables:
     basePath:
       default: "default"
@@ -19,7 +19,7 @@ paths:
                 $ref: "#/components/schemas/ArrayOfSurvivalItem"
       x-amazon-apigateway-integration:
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:295504962112:function:python_terraform_lambda/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:<SEUUSERIDAQUI>:function:python_terraform_lambda/invocations"
         responses:
           default:
             statusCode: "200"
@@ -43,7 +43,7 @@ paths:
                 $ref: "#/components/schemas/SurvivalResponse"
       x-amazon-apigateway-integration:
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:295504962112:function:python_terraform_lambda/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:<SEUUSERIDAQUI>:function:python_terraform_lambda/invocations"
         responses:
           default:
             statusCode: "200"
@@ -71,7 +71,7 @@ paths:
                 $ref: "#/components/schemas/SurvivalResponse"
       x-amazon-apigateway-integration:
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:295504962112:function:python_terraform_lambda/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:<SEUUSERIDAQUI>:function:python_terraform_lambda/invocations"
         responses:
           default:
             statusCode: "200"
@@ -94,7 +94,7 @@ paths:
           content: {}
       x-amazon-apigateway-integration:
         httpMethod: "POST"
-        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:295504962112:function:python_terraform_lambda/invocations"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:<SEUUSERIDAQUI>:function:python_terraform_lambda/invocations"
         responses:
           default:
             statusCode: "200"
