@@ -62,7 +62,7 @@ Após o deploy, utilize o endpoint gerado para enviar requisições conforme o c
 | GET    | `/sobreviventes/{id}` | Consultar escore de um passageiro específico      |
 | GET    | `/sobreviventes` | 	Listar todos os passageiros avaliados   
 
-## 📌 wefwefwefwef
+## 📌 Exemplo de uso
 
 | Método | Rota                     | body exemplo                           |
 |--------|--------------------------|-------------------------------------|
